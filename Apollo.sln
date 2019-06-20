@@ -12,9 +12,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9056FDCC-BA21-4FB0-88DE-41448C130C51}.Debug|x86.ActiveCfg = Debug|Win32
-		{9056FDCC-BA21-4FB0-88DE-41448C130C51}.Debug|x86.Build.0 = Debug|Win32
 		{9056FDCC-BA21-4FB0-88DE-41448C130C51}.Release|x86.ActiveCfg = Release|Win32
-		{9056FDCC-BA21-4FB0-88DE-41448C130C51}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

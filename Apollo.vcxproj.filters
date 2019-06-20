@@ -21,12 +21,12 @@
     <ClInclude Include="__vm\.Apollo.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FlexSensor.h">
+    <ClInclude Include="FlexSense.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FlexSensor.cpp">
+    <ClCompile Include="FlexSense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

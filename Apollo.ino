@@ -1,7 +1,8 @@
+#include "Glove.h"
 #include "FlexSense.h"
 
-int volt;
-FlexSensor finger1(A1);
+FlexData tempData;
+Glove mainGlove(A1, A2, A3, A4, A5);
 
 void setup()
 {
@@ -12,6 +13,6 @@ void setup()
 
 void loop()
 {
-	Serial.println(finger1.read());
+	tempData = mainGlove.ReadAll();
 	delay(100);
 }

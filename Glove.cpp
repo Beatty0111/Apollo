@@ -20,12 +20,13 @@ void Glove::SetPins(uint32_t pin1, uint32_t pin2, uint32_t pin3, uint32_t pin4, 
 	finger5_.SetPin(pin5);
 }
 
+//	Returns the pos (deg) of all flex sensors
 FlexData Glove::ReadAll() {
-	char data1 = finger1_.ReadPos();
-	char data2 = finger2_.ReadPos();
-	char data3 = finger3_.ReadPos();
-	char data4 = finger4_.ReadPos();
-	char data5 = finger5_.ReadPos();
+	uint8_t data1 = finger1_.ReadPos();
+	uint8_t data2 = finger2_.ReadPos();
+	uint8_t data3 = finger3_.ReadPos();
+	uint8_t data4 = finger4_.ReadPos();
+	uint8_t data5 = finger5_.ReadPos();
 
 	return FlexData(data1, data2, data3, data4, data5);
 }

@@ -106,13 +106,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FlexData.h" />
     <ClInclude Include="FlexSense.h" />
     <ClInclude Include="Glove.h" />
+    <ClInclude Include="Hand.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="__vm\.Apollo.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FlexSense.cpp" />
     <ClCompile Include="Glove.cpp" />
+    <ClCompile Include="Hand.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Apollo.rc" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>

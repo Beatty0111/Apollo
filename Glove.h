@@ -10,14 +10,7 @@
 #endif
 
 #include "FlexSense.h"
-
-struct FlexData {
-	char pos1, pos2, pos3, pos4, pos5;
-
-	FlexData(char fin1, char fin2, char fin3, char fin4, char fin5) :
-		pos1(fin1), pos2(fin2), pos3(fin3), pos4(fin4), pos5(fin5) {}
-	FlexData() {}
-};
+#include "FlexData.h"
 
 class Glove {
 public:
@@ -26,7 +19,7 @@ public:
 
 	void SetPins(uint32_t pin1, uint32_t pin2, uint32_t pin3, uint32_t pin4, uint32_t pin5);
 
-	FlexData ReadAll();
+	FlexData ReadAll();		//	Returns the pos (deg) of all flex sensors
 
 private:
 	FlexSensor finger1_, finger2_, finger3_, finger4_, finger5_;

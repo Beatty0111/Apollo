@@ -20,7 +20,7 @@ public:
 	void SetPin(uint32_t pin);
 
 	int Read();
-	char ReadPos();
+	uint8_t ReadPos();
 
 private:
 	uint32_t pin_;

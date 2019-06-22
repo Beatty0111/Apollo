@@ -22,11 +22,13 @@ void FlexSensor::SetPin(uint32_t pin) {
 	pinMode(pin, INPUT);
 }
 
+//	Returns flex value, raw data Analog Input
 int FlexSensor::Read() {
-		return analogRead(pin_);		//FIXME: Add error checking if pin_ is 0?
+	return analogRead(pin_);
 }
 
-char FlexSensor::ReadPos() {
+//	Returns scaled position (0 - 180), dirived from flex value
+uint8_t FlexSensor::ReadPos() {
 	int temp = Read();
 
 	//	Callibration

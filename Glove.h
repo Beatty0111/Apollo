@@ -12,11 +12,8 @@
 #include "FlexSense.h"
 
 struct FlexData {
-	char pos1;
-	char pos2;
-	char pos3;
-	char pos4;
-	char pos5;
+	char pos1, pos2, pos3, pos4, pos5;
+
 	FlexData(char fin1, char fin2, char fin3, char fin4, char fin5) :
 		pos1(fin1), pos2(fin2), pos3(fin3), pos4(fin4), pos5(fin5) {}
 	FlexData() {}
@@ -32,11 +29,7 @@ public:
 	FlexData ReadAll();
 
 private:
-	FlexSensor finger1_;
-	FlexSensor finger2_;
-	FlexSensor finger3_;
-	FlexSensor finger5_;
-	FlexSensor finger4_;
+	FlexSensor finger1_, finger2_, finger3_, finger4_, finger5_;
 };
 
 

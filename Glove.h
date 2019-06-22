@@ -19,6 +19,7 @@ struct FlexData {
 	char pos5;
 	FlexData(char fin1, char fin2, char fin3, char fin4, char fin5) :
 		pos1(fin1), pos2(fin2), pos3(fin3), pos4(fin4), pos5(fin5) {}
+	FlexData() {}
 };
 
 class Glove {

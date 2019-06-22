@@ -31,13 +31,13 @@ char FlexSensor::ReadPos() {
 
 	//	Callibration
 	if (temp > max_)
-		max_ = temp;
+		max_ = temp;			//Add better callibration system. On startup callibrate until button push? then move after button push??
 	if (temp < min_)
 		min_ = temp;
 
 
 	//Scale input
-	temp = (temp * 255 / std::abs(max_ - min_));
+	temp = ((temp - min_) * 180 / std::abs(max_ - min_));
 
 	return temp;
 }

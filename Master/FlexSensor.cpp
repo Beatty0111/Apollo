@@ -2,7 +2,7 @@
 // 
 // 
 
-#include "FlexSense.h"
+#include "FlexSensor.h"
 #include <cmath>
 
 FlexSensor::FlexSensor(uint32_t pin) {
@@ -33,13 +33,13 @@ uint8_t FlexSensor::ReadPos() {
 
 	//	Callibration
 	if (temp > max_)
-		max_ = temp;			//Add better callibration system. On startup callibrate until button push? then move after button push??
+		max_ = (temp + max_) / 2;			//Add better callibration system. On startup callibrate until button push? then move after button push??
 	if (temp < min_)
-		min_ = temp;
+		min_ = (temp + min_) / 2;
 
 
 	//Scale input
-	temp = ((temp - min_) * 180 / std::abs(max_ - min_));
+	temp = std::abs(180 - ((temp - min_) * 180 / std::abs(max_ - min_)));
 
 	return temp;
 }

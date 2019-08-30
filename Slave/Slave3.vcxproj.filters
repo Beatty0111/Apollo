@@ -15,42 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Apollo.ino" />
+    <None Include="Slave3.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="__vm\.Apollo.vsarduino.h">
+    <ClInclude Include="__vm\.Slave3.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FlexSense.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Glove.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Hand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FlexData.h">
+    <ClInclude Include="ServoHand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FlexSense.cpp">
+    <ClCompile Include="ServoHand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Glove.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hand.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Apollo.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>

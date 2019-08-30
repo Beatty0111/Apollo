@@ -1,7 +1,7 @@
-// FlexSense.h
+// FlexSensor.h
 
-#ifndef _FLEXSENSE_h
-#define _FLEXSENSE_h
+#ifndef _FLEXSENSOR_h
+#define _FLEXSENSOR_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -9,10 +9,7 @@
 	#include "WProgram.h"
 #endif
 
-#include <stdint.h>
-
-class FlexSensor
-{
+class FlexSensor {
 public:
 	FlexSensor(uint32_t pin);
 	FlexSensor();
@@ -24,10 +21,9 @@ public:
 
 private:
 	uint32_t pin_;
-	int min_, max_;
+	uint16_t min_, max_;
 
 };
-
 
 #endif
 

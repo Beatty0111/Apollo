@@ -1,11 +1,12 @@
 
-<div style="text-align: center; margin: 0% 10%">
 
 # Helping Hand (Codename Apollo)
 
 *Innovation Challenge Project by Tylor Beatty and Stanley Huang*
 
+<p align="center">
   <img src="https://raw.githubusercontent.com/Beatty0111/Apollo/master/project.jpg" height="400px">
+</p>
 
 **Overview**
 
@@ -17,4 +18,3 @@ With the advancement of 3-D printing and the constant price drop in the printers
 
 Our design for solving this issue includes a robotic 3-D printed prosthetic and a gesture sensing glove to help achieve the desired prosthetic motion. The prosthetic arm is motorized with five servos controlling each finger. The glove uses flex sensors to detect the motions generated. This is achieved by an anolog read of the change in voltage created by the flex sensors, by a microcontroller. This microcontroller normalizes this data to an angle and sends the data to another microcontroller, in the prosthetic, over I2C. The second microcontroller constantly reads data and updates the positon of the fingers.
 
-</div>

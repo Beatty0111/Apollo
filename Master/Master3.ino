@@ -1,31 +1,25 @@
 #include "FlexSensor.h"
 #include <Wire.h>
 
+#define PINK A5
+#define RING A4
+#define MIDDLE A3
+#define POINTER A2
+#define THUMB A1
+
 uint8_t SendData();
-FlexSensor f1(A5);	//	Pink
-FlexSensor f2(A4);	//	Ring
-FlexSensor f3(A3);	//	Middle
-FlexSensor f4(A2);	//	Pointer
-FlexSensor f5(A1);	//	Thumb
+FlexSensor f1(PINK);
+FlexSensor f2(RING);
+FlexSensor f3(MIDDLE);
+FlexSensor f4(POINTER);
+FlexSensor f5(THUMB);
 
 void setup() {
 	Serial.begin(115200);
 	Wire.begin();
 }
 
-void loop() {
-
-	/*Serial.print(f1.ReadPos());
-	Serial.print(" | ");
-	Serial.print(f2.ReadPos());
-	Serial.print(" | ");
-	Serial.print(f3.ReadPos());
-	Serial.print(" | ");
-	Serial.print(f4.ReadPos());
-	Serial.print(" | ");
-	Serial.print(f5.ReadPos());
-	Serial.println("");*/
-	
+void loop() {}
 	SendData();
 }
 

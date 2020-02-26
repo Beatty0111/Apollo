@@ -33,25 +33,11 @@ void setup() {
 
 void loop() {
 	delay(300);
-	//f1.write(0);
-	//f2.write(0);
-	//f3.write(0);
-	//f4a.write(0);
-	//f4b.write(180);
-
-	//delay(500);
-
-	//f1.write(180);
-	//f2.write(180);
-	//f3.write(180);
-	//f4a.write(180);
-	//f4b.write(120);
-
-	//delay(500);
 	SetPos();
 }
 
 void SetPos() {
+	//	If change is significant, move the servo
 	if (abs(posLast[0] - pos[0]) > 15) {
 		f1.write(pos[0]);
 	}
@@ -68,8 +54,6 @@ void SetPos() {
 		f4b.write(abs(170 - (pos[4] / 2)));
 
 	}
-	//Serial.println("");
-
 
 	posLast[0] = pos[0];
 	posLast[1] = pos[1];
